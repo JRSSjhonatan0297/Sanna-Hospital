@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C2F3E0C-F86D-4899-B70C-7BE41098DF40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HOSPITAL_SANNA</RootNamespace>
+    <AssemblyName>HOSPITAL_SANNA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01C_LOGIN.cs" />
+    <Compile Include="01_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LOGIN.Designer.cs">
+      <DependentUpon>01_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_JEFEAREA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_JEFEAREA.Designer.cs">
+      <DependentUpon>02_JEFEAREA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_JEFESELECCION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_JEFESELECCION.Designer.cs">
+      <DependentUpon>03_JEFESELECCION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04_JEFERRHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="04_JEFERRHH.Designer.cs">
+      <DependentUpon>04_JEFERRHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APLICANTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICANTES.Designer.cs">
+      <DependentUpon>APLICANTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APLICANTES_CLASS.cs" />
+    <Compile Include="AREA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AREA.Designer.cs">
+      <DependentUpon>AREA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AREA_CLASS.cs" />
+    <Compile Include="ASISTENCIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASISTENCIA.Designer.cs">
+      <DependentUpon>ASISTENCIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASISTENCIA_CLASS.cs" />
+    <Compile Include="CARCULAR_REMUNERACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CARCULAR_REMUNERACION.Designer.cs">
+      <DependentUpon>CARCULAR_REMUNERACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CARCULAR_REMUNERACION_CLASS.cs" />
+    <Compile Include="CARGO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CARGO.Designer.cs">
+      <DependentUpon>CARGO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CARGO_CLASS.cs" />
+    <Compile Include="EVALUACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVALUACION.Designer.cs">
+      <DependentUpon>EVALUACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EVALUACION_CLASS.cs" />
+    <Compile Include="OBSERVACIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OBSERVACIONES.Designer.cs">
+      <DependentUpon>OBSERVACIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OBSERVACIONES_CLASS.cs" />
+    <Compile Include="PERSONAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONAL.Designer.cs">
+      <DependentUpon>PERSONAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAL_CLASS.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RENDIMIENTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RENDIMIENTO.Designer.cs">
+      <DependentUpon>RENDIMIENTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RENDIMIENTO_CLASS.cs" />
+    <Compile Include="REQUERIMIENTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REQUERIMIENTOS.Designer.cs">
+      <DependentUpon>REQUERIMIENTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REQUERIMIENTOS_CLASS.cs" />
+    <Compile Include="SEDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEDE.Designer.cs">
+      <DependentUpon>SEDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEDE_CLASS.cs" />
+    <Compile Include="TABLA_EVALUACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TABLA_EVALUACION.Designer.cs">
+      <DependentUpon>TABLA_EVALUACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TABLA_EVALUACION_CLASS.cs" />
+    <EmbeddedResource Include="01_LOGIN.resx">
+      <DependentUpon>01_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_JEFEAREA.resx">
+      <DependentUpon>02_JEFEAREA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_JEFESELECCION.resx">
+      <DependentUpon>03_JEFESELECCION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04_JEFERRHH.resx">
+      <DependentUpon>04_JEFERRHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICANTES.resx">
+      <DependentUpon>APLICANTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AREA.resx">
+      <DependentUpon>AREA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASISTENCIA.resx">
+      <DependentUpon>ASISTENCIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CARCULAR_REMUNERACION.resx">
+      <DependentUpon>CARCULAR_REMUNERACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CARGO.resx">
+      <DependentUpon>CARGO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVALUACION.resx">
+      <DependentUpon>EVALUACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OBSERVACIONES.resx">
+      <DependentUpon>OBSERVACIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAL.resx">
+      <DependentUpon>PERSONAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RENDIMIENTO.resx">
+      <DependentUpon>RENDIMIENTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REQUERIMIENTOS.resx">
+      <DependentUpon>REQUERIMIENTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEDE.resx">
+      <DependentUpon>SEDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TABLA_EVALUACION.resx">
+      <DependentUpon>TABLA_EVALUACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
